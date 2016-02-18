@@ -61,18 +61,30 @@ class FigsharePublicService extends RestfulService {
         return $response;
     }
 
+    /**
+     * @param integer $page
+     */
     public function setPage($page){
         $this->page = $page;
     }
 
+    /**
+     * @param integer $pageSize
+     */
     public function setPageSize($pageSize){
         $this->pageSize = $pageSize;
     }
 
+    /**
+     * @param integer $limit
+     */
     public function setLimit($limit){
         $this->limit = $limit;
     }
 
+    /**
+     * @param integer $offset
+     */
     public function setOffset($offset){
         $this->offset = $offset;
     }
