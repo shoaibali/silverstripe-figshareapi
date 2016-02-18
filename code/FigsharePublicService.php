@@ -6,7 +6,6 @@
  * @package figsharepublicservice
  */
 
-namespace Figshare;
 
 class FigsharePublicService extends RestfulService
 {
