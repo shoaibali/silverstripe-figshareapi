@@ -7,6 +7,3 @@ $lang['en_US']['FigsharePublicService']['NAME'] = array(
     50,
     'Figshare public API service'
 );
-
-
-?>
