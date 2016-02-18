@@ -6,7 +6,10 @@
  * @package figsharepublicservice
  */
 
-class FigsharePublicService extends RestfulService {
+namespace Figshare;
+
+class FigsharePublicService extends RestfulService
+{
 
    /**
      * Page number
@@ -46,39 +49,45 @@ class FigsharePublicService extends RestfulService {
      *
      * @param String $resource Resource can be article, author, category, collection etc
      */
-    function public __construct($resource){
+    function public __construct($resource)
+    {
         parent::__construct('https://api.figshare.com/v2/' . $resource);
     }
 
     /**
      * @param integer $page
      */
-    public function setPage($page){
+    public function setPage($page)
+    {
         $this->page = $page;
     }
 
     /**
      * @param integer $pageSize
      */
-    public function setPageSize($pageSize){
+    public function setPageSize($pageSize)
+    {
         $this->pageSize = $pageSize;
     }
 
     /**
      * @param integer $limit
      */
-    public function setLimit($limit){
+    public function setLimit($limit)
+    {
         $this->limit = $limit;
     }
 
     /**
      * @param integer $offset
      */
-    public function setOffset($offset){
+    public function setOffset($offset)
+    {
         $this->offset = $offset;
     }
 
-    public function getResource(){
+    public function getResource()
+    {
         $params = array();
 
         if (isset($this->limit) || isset($this->offset)) {
