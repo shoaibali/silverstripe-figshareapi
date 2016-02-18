@@ -46,19 +46,8 @@ class FigsharePublicService extends RestfulService {
      *
      * @param String $resource Resource can be article, author, category, collection etc
      */
-    function __construct($resource){
+    function public __construct($resource){
         parent::__construct('https://api.figshare.com/v2/' . $resource);
-    }
-
-
-    /**
-     * This will return API specific error messages.
-     *
-     * @param  HTTPResponse
-     * @return String
-     */
-    function error(){
-        return $response;
     }
 
     /**
