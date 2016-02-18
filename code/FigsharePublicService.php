@@ -79,6 +79,7 @@ class FigsharePublicService extends RestfulService {
     }
 
     public function getResource(){
+        $params = array();
 
         if (isset($this->limit) || isset($this->offset)) {
             if (isset($this->limit)) {
